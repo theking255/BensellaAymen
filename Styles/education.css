@@ -1,0 +1,98 @@
+body {
+  height: 2200px;
+}
+
+.hadra {
+  display: block;
+  z-index: 10;
+}
+
+.main {
+  direction: rtl;
+  margin-left: auto;
+  margin-top: 120px;
+  position: relative; /* Added relative positioning */
+  float: right;
+}
+
+.card-first {
+  float: right;
+  direction: rtl;
+  z-index: 1;
+  margin-right:20px;
+  margin-left:20px;
+  align-content: start;
+  max-width: 800px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.arrow1 {
+  transform: scaleX(-1);
+  width: 500px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  z-index: 2;
+  display: block;
+}
+
+.main:after {
+  content: url("path/to/your/arrow.png"); /* Replace with your image path */
+  background-repeat: no-repeat; /* Prevent image repeating */
+  position: absolute;
+  top: 50px; /* Adjust positioning as needed */
+  left: calc(50% - 100px); /* Center the image horizontally */
+  width: 200px;
+  height: auto;
+}
+
+second {
+  position: absolute;
+  top: calc(100px + 900px); /* Adjust based on .main top margin and .arrow1 bottom margin */
+}
+
+.card-second {
+  margin-left: 20px;
+  margin-right:20px;
+  direction: rtl;
+  margin-top: 50px;
+  z-index: 1;
+  align-content: start;
+  max-width: 800px;
+  font-size: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding:5px;
+}
+.arrow2 {
+  width: 500px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom:0px;
+  z-index: 2;
+  display: block;
+}
+.card-therd{
+  float: right;
+  direction: rtl;
+  z-index: 1;
+  margin-right:20px;
+  margin-left:20px;
+  align-content: start;
+  max-width: 800px;
+  font-size: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding:5px;
+  
+}
+.copy{
+  position: relative;
+  bottom: -360px;
+  left:40px;
+  color: gray;
+}
