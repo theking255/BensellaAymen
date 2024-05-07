@@ -1,0 +1,113 @@
+html{
+  scroll-behavior: smooth;
+}
+
+div,p{
+  font-family: "El Messiri", Arial;
+  margin:0
+}
+body {
+  margin: 0px;
+  margin-top:85px;
+  margin-left:20px; 
+  background-image: url('https://images.unsplash.com/photo-1510936111840-65e151ad71bb?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+.main{
+  display: inline-block;
+  flex-direction: row;
+  vertical-align: top;
+  margin-top:150px;
+  display: flex; /* Enables row layout for child elements */
+}
+.head-des{
+  max-width:700px;
+  font-size:28px;
+  display: inline-block;
+  font-weight: 600;
+  background-color: transparent;
+  justify-content: center;
+  padding-top: 50px;
+}
+.container {
+  display: flex; /* Enables row layout for child elements */
+  justify-content:space-between; /* Aligns elements to the right */
+  margin: 0 20px 0 0;
+  max-height: 450px;
+
+}
+.pfp-container{
+  overflow: hidden;
+  vertical-align: top;
+  z-index: 5;
+  display: inline-block;
+  justify-content: center;
+  border:none;
+  background-color: transparent;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0 , 0.5);
+  border-radius: 10px;
+}
+.pfp-container img {
+  width: 100%; /* Fills container proportionally */
+  height: auto; /* Maintains aspect ratio */
+}
+/* Mobile specific styles (optional) */
+@media only screen and (max-width: 768px) {
+  .main{
+    margin-left: 0px;
+  }
+  .pfp-container {
+      max-width: 250px; /* Adjust for desired mobile size */
+      max-height: 250px; /* Adjust for desired mobile size */
+  }
+  .start{
+    font-size: 30px;
+    margin-left: 70px;
+    color: white;
+  }
+  .med{
+    font-size: 30px;
+    margin-left: 70px;
+    color: white;
+  }
+  .name{
+    font-size: 30px;
+    margin-left: 70px;
+    color: rgb(94, 197, 245);
+  }
+}
+
+/* Optional: Larger screen size adjustments */
+@media only screen and (min-width: 768px) {
+  .main{
+    margin-left: 60px;
+  }
+  .pfp-container {
+      max-width: 450px; /* Adjust for desired max size on PC */
+      max-height: 450px; /* Adjust for desired max size on PC */
+  }
+  .start{
+    font-size: 50px;
+    margin-left: 140px;
+    color: white;
+  }
+  .med{
+    font-size: 50px;
+    margin-left: 140px;
+    color:white
+  }
+  .name{
+    font-size: 80px;
+    margin-left: 140px;
+    color: rgb(94, 197, 245);
+  }
+}
+.copy{
+  position: relative;
+  bottom: 10px;
+  color: gray;
+  z-index: 100;
+}

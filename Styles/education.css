@@ -2,6 +2,10 @@ body {
   height: 2200px;
 }
 
+div,p{
+  font-family: "El Messiri", Arial;
+}
+
 .hadra {
   display: block;
   z-index: 10;

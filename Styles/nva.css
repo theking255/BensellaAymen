@@ -19,6 +19,7 @@ nav ul {
   display: flex;
   justify-content: flex-end;
 
+
 }
 nav li{
   height: 50px;
@@ -30,7 +31,6 @@ nav a{
   display: flex;
   align-items :center;
   color:rgb(0, 0, 0);
-
 }
 nav a:hover{
   opacity:0.6
@@ -48,7 +48,7 @@ nav li:first-child{
   width: 250px;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(13px);
   box-shadow: -10px 0 10px rgba(155, 155, 155, 0.5);
   display: none;
   flex-direction: column;
@@ -62,6 +62,7 @@ nav li:first-child{
 }
 .sidebar a {
   width: 100;
+  color:rgb(255, 255, 255);
 }
 .menu-button{
   display: none;

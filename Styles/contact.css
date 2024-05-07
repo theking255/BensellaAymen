@@ -103,7 +103,6 @@ body {
   top:410px;
   right:20px;
   left:30px;
-  font-size:35px;
   justify-content: center;
   color:rgb(0, 0, 0);
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
@@ -129,7 +128,6 @@ body {
   top:510px;
   right:20px;
   left:30px;
-  font-size:35px;
   justify-content: center;
   color:rgb(0, 0, 0);
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
@@ -146,6 +144,22 @@ body {
 
   display: flex;
 
+}
+@media only screen and (min-width: 768px) {
+  .contact-but-down4{
+    font-size: 40px;
+  }
+  .contact-but-down5{
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-but-down4{
+    font-size: 20px;
+  }
+  .contact-but-down5{
+    font-size: 20px;
+  }
 }
 .contact-but-down6 {
   padding-top:5px;
