@@ -54,6 +54,11 @@ body {
   width: 100%; /* Fills container proportionally */
   height: auto; /* Maintains aspect ratio */
 }
+.copy{
+  position: relative;
+  color: gray;
+  z-index: 100;
+}
 /* Mobile specific styles (optional) */
 @media only screen and (max-width: 768px) {
   .main{
@@ -77,6 +82,10 @@ body {
     font-size: 30px;
     margin-left: 70px;
     color: rgb(94, 197, 245);
+  }
+  .copy{
+    bottom:-140px;
+    left:20px;
   }
 }
 
@@ -104,10 +113,8 @@ body {
     margin-left: 140px;
     color: rgb(94, 197, 245);
   }
-}
-.copy{
-  position: relative;
-  bottom: 10px;
-  color: gray;
-  z-index: 100;
+  .copy{
+    bottom:10px;
+    left:20px;
+  }
 }
